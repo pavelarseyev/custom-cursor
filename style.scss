@@ -1,0 +1,57 @@
+//// out: ./style.css, compress: true, sourceMap: false, autoprefixer: last 2 versions, groupmedia: true
+@import "include-media";
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+}
+
+
+body {
+	padding: 60px 0;
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+
+a,
+button,
+.button {
+	cursor: inherit;
+	transition: box-shadow .3s;
+
+	&:hover {
+		box-shadow: 0 0 10px rgba(black, .3);
+	}
+}
+
+a {
+	color: darkcyan;	
+}
+
+button,
+.button {
+	display: inline-block;
+	padding: 10px 30px;
+	background-color: green;
+	color: white;
+	border: 1px solid rgba(#000, .2);
+	text-decoration: none;
+}
+
+canvas {
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: block;
+	pointer-events: none;
+}
